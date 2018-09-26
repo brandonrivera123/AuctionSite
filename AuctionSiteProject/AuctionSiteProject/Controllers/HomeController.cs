@@ -13,9 +13,9 @@ namespace AuctionSiteProject.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult CheckIn()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Bidder Check In";
 
             return View();
         }
@@ -23,6 +23,12 @@ namespace AuctionSiteProject.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Payments()
+        {
+            ViewBag.Message = "Payment page.";
 
             return View();
         }
