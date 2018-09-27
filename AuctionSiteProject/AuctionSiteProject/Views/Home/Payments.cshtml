@@ -12,13 +12,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <br>
+<div class="jumbotron">
+    <h1>Total: $201.00</h1>
+    <p>Break Down</p>
+ <!-- <div class="row">
+        <ul class="nav nav-pills">
+            <li id="paidPill"><a href="#">Paid <span class="badge">3</span></a></li>
+            <li id="notPaidPill"><a href="#">Not Paid <span class="badge">3</span></a></li>
+            <li id="pendingPill"><a href="#">Pending <span class="badge">3</span></a></li>
+        </ul>
+    </div>-->
+    <div class="row">
+        <div class="col-lg-2 alert alert-dismissible alert-success" id="paidTotal">
+            <strong>Paid: 3</strong><br />Total: $50.00
+        </div>
+        <div class="col-lg-2 alert alert-dismissible alert-info" id="pendingTotal">
+            <strong>Pending: 3</strong><br />Total: $101.00
+        </div>
+        <div class="col-lg-2 alert alert-dismissible alert-danger" id="notPaidTotal">
+            <strong>Not Paid: 3</strong><br />Total: $50.00
+        </div>
+    </div>
+</div>
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-3">
         <label class="control-label" for="focusedInput">Bidder Search</label>
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-3">
         <div class="form-group">
             <input class="form-control" id="focusedInput" onkeyup="myFunction()" type="text" placeholder="Search">
         </div>
@@ -47,6 +69,7 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Address</th>
             <th>Status</th>
             <th></th>
         </tr>
@@ -57,6 +80,7 @@
             <td>Brandon</td>
             <td>Rivera</td>
             <td><a href="mailto:brandon.rivera2014@gmail.com" target="_top">brandon.rivera2014@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>N/A</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -65,6 +89,7 @@
             <td>Noah</td>
             <td>Sterling</td>
             <td><a href="mailto:noah.sterling@gmail.com" target="_top">noah.sterling@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>N/A</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -73,6 +98,7 @@
             <td>Camille</td>
             <td>Soliman</td>
             <td><a href="mailto:camille.soliman@gmail.com" target="_top">camille.soliman@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>Pending Payment</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -81,6 +107,7 @@
             <td>Alec</td>
             <td>Rance</td>
             <td><a href="mailto:alec.rance@gmail.com" target="_top">alec.rance@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>Paid</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -89,6 +116,7 @@
             <td>First</td>
             <td>Last</td>
             <td><a href="mailto:first.last@gmail.com" target="_top">first.last@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>Not Paid</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -97,6 +125,7 @@
             <td>First</td>
             <td>Last</td>
             <td><a href="mailto:first.last@gmail.com" target="_top">first.last@gmail.com</a></td>
+            <td>1 UNF Dr</td>
             <td>N/A</td>
             <td><a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
         </tr>
@@ -133,6 +162,12 @@
                                 <label for="inputLastName" class="col-lg-2 control-label">Last Name</label>
                                 <div class="col-lg-10">
                                     <input type="password" class="form-control" id="inputLastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLastName" class="col-lg-2 control-label">Address</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputAddress" placeholder="Address">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -198,6 +233,12 @@
                                 <label for="inputLastName" class="col-lg-2 control-label">Last Name</label>
                                 <div class="col-lg-10">
                                     <input type="password" class="form-control" id="inputLastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLastName" class="col-lg-2 control-label">Address</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputAddress" placeholder="Address">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -294,6 +335,21 @@
             $(".danger").show();
             $(".info").show();
             $(".success").show();
+        });
+        $("#pendingPill").click(function () {
+            $("#paidTotal").hide();
+            $("#notPaidTotal").hide();
+            $("#pendingTotal").show();
+        });
+        $("#paidPill").click(function () {
+            $("#paidTotal").show();
+            $("#notPaidTotal").hide();
+            $("#pendingTotal").hide();
+        });
+        $("#notPaidPill").click(function () {
+            $("#paidTotal").hide();
+            $("#notPaidTotal").show();
+            $("#pendingTotal").hide();
         });
     });
 </script>
