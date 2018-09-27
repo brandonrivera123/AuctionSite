@@ -23,7 +23,7 @@ namespace AuctionSiteProject
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/lumen.css",
+                      "~/Content/superhero.css",
                       "~/Content/site.css"));
         }
     }

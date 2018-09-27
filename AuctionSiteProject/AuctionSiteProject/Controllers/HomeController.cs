@@ -32,5 +32,11 @@ namespace AuctionSiteProject.Controllers
 
             return View();
         }
+        public ActionResult SilentAuction()
+        {
+            ViewBag.Message = "Silent Auction page.";
+
+            return View();
+        }
     }
 }
