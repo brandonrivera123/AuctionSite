@@ -38,5 +38,11 @@ namespace AuctionSiteProject.Controllers
 
             return View();
         }
+        public ActionResult NewItem()
+        {
+            ViewBag.Message = "New Item page.";
+
+            return View();
+        }
     }
 }
