@@ -38,6 +38,7 @@ namespace AuctionSiteProject.Controllers
 
             return View();
         }
+<<<<<<< HEAD
 
         public ActionResult NewItem()
 
@@ -45,6 +46,13 @@ namespace AuctionSiteProject.Controllers
             ViewBag.Message = "New Item page.";
             return View();
 
+=======
+        public ActionResult NewItem()
+        {
+            ViewBag.Message = "New Item page.";
+
+            return View();
+>>>>>>> 0f4864e4805f7cf56e08de7955212343024bf6a0
         }
     }
 }
