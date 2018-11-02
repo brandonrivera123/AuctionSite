@@ -1,0 +1,22 @@
+s=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.02.10 22:58:10 =~=~=~=~=~=~=~=~=~=~=~=
+login as: sc`1  188055
+sc188055@192.168.100.71's password: 
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-109-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+47 packages can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+Last login: Sat Feb 10 21:19:19 2018 from 192.168.100.32
+]0;sc188055@cisvm-cop4640-1: ~sc188055@cisvm-cop4640-1:~$ i hve [K[K[Ka[K[K[K[Kbash 
+]0;sc188055@cisvm-cop4640-1: ~sc188055@cisvm-cop4640-1:~$ bash -[K[K[K[K[K[K$ cat ~/.bar[Kshrc
+$: command not found
+]0;sc188055@cisvm-cop4640-1: ~sc188055@cisvm-cop4640-1:~$ i have no idea wh[K[Khow to do this
+The program 'i' is currently not installed. You can install it by typing:
+sudo apt install iprint
+]0;sc188055@cisvm-cop4640-1: ~sc188055@cisvm-cop4640-1:~$ 
