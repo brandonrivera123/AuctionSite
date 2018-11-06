@@ -46,5 +46,19 @@ namespace AuctionPlatformSystem.Controllers
             ViewBag.Message = "New Item page.";
             return View();
         }
-    }
+
+		public ActionResult Transactions()
+
+		{
+			ViewBag.Message = "Transactions page.";
+			return View();
+		}
+
+		public ActionResult NewTransaction()
+
+		{
+			ViewBag.Message = "New Transaction page.";
+			return View();
+		}
+	}
 }

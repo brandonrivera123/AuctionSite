@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Transactions";
+}
+
+<h2>Transactions</h2>
+
+<table class="table">
+	<tr>
+		<td align="left"><button type="button" id="newTransaction" class="btn btn-primary" onclick="window.location.href='@Url.Action("newTransaction")'">New Transaction</button></td>
+		<td align="center"><button type="button" id="updateTransaction" class="btn btn-primary">Update Transaction</button></td>
+		<td align="right"><button type="button" id="deleteTransaction" class="btn btn-primary">Delete Transaction</button></td>
+	</tr>
+</table>
+
+<table class="table table-hover">
+	<thead class="bg-primary">
+		<tr>
+			<th scope="col">Select</th>
+			<th scope="col">Item</th>
+			<th scope="col">Guest First Name</th>
+			<th scope="col">Guest Last Name</th>
+			<th scope="col">Guest Email</th>
+			<th scope="col">Guest Phone</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input type="checkbox" name="JumboShrimpTickets" />&nbsp;</td>
+			<td>Jumbo Shrimp Tickets</td>
+			<td>John</td>
+			<td>Smith</td>
+			<td>jsmith@gmail.com</td>
+			<td>(321) 123-4567</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="MonaLisa" />&nbsp;</td>
+			<td>Mona Lisa</td>
+			<td>Abby</td>
+			<td>Crawford</td>
+			<td>acrawford@hotmail.com</td>
+			<td>(999) 876-5432</td>
+		</tr>
+	</tbody>
+</table>
